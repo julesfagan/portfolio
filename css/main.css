@@ -176,6 +176,14 @@ section ul li dd {
 	margin-bottom:3px;
 }
 
+section ul li dd a {
+	color: #018EC5;
+}
+
+section ul li dd a:hover {
+	text-decoration: none;
+}
+
 section ul li dd span {
 	font-weight: bold;
 }
