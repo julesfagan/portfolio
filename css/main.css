@@ -1,0 +1,181 @@
+/**********************************************
+GENERAL
+***********************************************/
+* {
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+html {
+	background-image: url(../img/bg-beach.jpg);
+	background-position: top left;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+html, body {
+	width:100%;
+}
+
+article {
+	background-color: rgba(176, 196, 222, .7);
+	margin:0 auto;
+	width:1000px;
+	color:white;
+	padding:30px;
+}
+
+/**********************************************
+HEADER
+***********************************************/
+header {
+	height:120px;
+}
+
+#logo-and-tag {
+	float: left;
+	text-align: right;
+	width:30%;
+}
+
+#logo {
+	font-family: 'Audiowide', cursive;
+	font-size:2em;
+	font-weight: bolder;
+	margin:0;
+	padding:0;
+}
+
+#tag {
+	color: rgb(184, 140, 58);
+	font-weight: bold;
+}
+
+/**********************************************
+NAVIGATION
+***********************************************/
+nav {
+	float:right;
+	height: 100%;
+	width: 70%;
+	position: relative;
+}
+
+nav ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 100%;
+	/*
+	This doesn't work
+	margin-left: -25%;
+	margin-top: -25%;
+	Also height is optional, but need width.
+	*/
+}
+
+nav ul li {
+	float: right;
+	font-size:1.0em;
+	font-weight: bold;
+	height:30px;
+	line-height:30px;
+	margin-right:20px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/**********************************************
+SECTION
+***********************************************/
+section ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+section ul li {
+	border-bottom: 1px dotted white;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+section ul li:after {
+	/* grouping floated elements in each <li> */
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+section ul li:nth-child(odd) img {
+	border: 5px solid white; 
+	float: left;
+	width:25%; 
+}
+
+section ul li:nth-child(odd) dl {
+	float:right; 
+	width:72%;
+}
+
+section ul li:nth-child(even) img {
+	border: 5px solid white;
+	float:right;
+	width:25%;
+}
+
+section ul li:nth-child(even) dl {
+	display:inline-block;
+	float:left;
+	width:72%;
+}
+
+section ul li dl {
+	font-family: Arial, sans-serif;
+	font-size: 1.2em;
+	margin:0;
+}
+
+section ul li dt {
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom:3px;
+	color:rgb(184, 140, 58);
+}
+
+section ul li dd {
+	margin-left:0;
+	margin-bottom:3px;
+}
+
+section ul li dd span {
+	font-weight: bold;
+}
