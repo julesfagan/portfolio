@@ -21,7 +21,7 @@ GENERAL
 }
 
 html {
-	background-image: url(../img/bg-beach.jpg);
+	background-image: url(../img/bg-beach-72.jpg);
 	background-position: top left;
 	background-attachment: fixed;
 	background-size: cover;
@@ -56,7 +56,7 @@ header {
 }
 
 #logo {
-	font-family: 'Bevan', cursive;
+	font-family: 'Audiowide', cursive;
 	font-size:2em;
 	font-weight: bolder;
 	margin:0;
